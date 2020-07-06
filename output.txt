@@ -1,0 +1,80 @@
+===================================================================
+Recommended Usage: ./simplecompile.sh > output.txt 2>&1
+===================================================================
+Tue Feb 11 22:38:38 PST 2020
+Linux csslab11.uwb.edu 3.10.0-957.27.2.el7.x86_64 #1 SMP Mon Jul 29 17:46:05 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+uid=915012(yuqi0403) gid=2120915012(yuqi0403) groups=2120915012(yuqi0403),605559(lab-access)
+===================================================================
+*** compiling with clang++ to create an executable called myprogram
+===================================================================
+clang version 7.0.1 (tags/RELEASE_701/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /opt/rh/llvm-toolset-7.0/root/usr/bin
+===================================================================
+*** running myprogram
+testGraphBasic
+testGraphBasic (PASSED)
+testGraph0DFS
+testGraph0DFS (PASSED)
+testGraph0BFS
+testGraph0BFS (PASSED)
+testGraph0Dijkstra
+testGraph0Dijkstra (PASSED)
+testGraph0NotDirected
+testGraph0NotDirected (PASSED)
+testGraph1
+testGraph1 (PASSED)
+Done!
+===================================================================
+*** running clang-tidy using options from .clang-tidy
+*** fix all warnings, modify .clang-tidy if necessary
+*** explain all changes to .clang-tidy in README
+LLVM (http://llvm.org/):
+  LLVM version 7.0.1
+  Optimized build.
+  Default target: x86_64-unknown-linux-gnu
+  Host CPU: broadwell
+19611 warnings generated.
+33887 warnings generated.
+44381 warnings generated.
+54903 warnings generated.
+Suppressed 54906 warnings (54903 in non-user code, 3 NOLINT).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+===================================================================
+*** generating new .clang-format based on LLVM style
+*** running clang-format for formatting suggestions
+*** examine all suggestions, fix selectively
+*** formatting suggestions for ./edge.cpp
+*** formatting suggestions for ./graph.cpp
+*** formatting suggestions for ./graphtest.cpp
+*** formatting suggestions for ./main.cpp
+*** formatting suggestions for ./vertex.cpp
+===================================================================
+*** running valgrind to detect memory leaks
+==16170==     in use at exit: 0 bytes in 0 blocks
+===================================================================
+*** compiling with clang++ to checking for memory leaks
+===================================================================
+*** running myprogram with memory checking
+testGraphBasic
+testGraphBasic (PASSED)
+testGraph0DFS
+testGraph0DFS (PASSED)
+testGraph0BFS
+testGraph0BFS (PASSED)
+testGraph0Dijkstra
+testGraph0Dijkstra (PASSED)
+testGraph0NotDirected
+4testGraph0NotDirected (PASSED)
+testGraph1
+testGraph1 (PASSED)
+Done!
+===================================================================
+*** using --analyze option for clang++ to detect issues
+===================================================================
+*** cleaning up, deleting myprogram, myprogram.dSYM and core
+===================================================================
+Tue Feb 11 22:39:39 PST 2020
+===================================================================
+./simplecompile.sh exiting with 0

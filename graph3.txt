@@ -1,0 +1,8 @@
+7
+K   F   0
+F   C   0
+F   J   0
+K   N   0
+N   L   0
+L   M   0
+N   O   0

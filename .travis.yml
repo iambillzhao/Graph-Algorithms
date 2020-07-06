@@ -1,0 +1,19 @@
+# Travis.ci file https://docs.travis-ci.com/user/tutorial/
+# Continuous integration
+
+# Login to https://travis-ci.com/ using your github credentials
+# Add this repository to travis
+# Every time there is a commit, this script will be run and result emailed
+
+language: cpp
+
+dist: xenial
+
+before_install:
+  - uname -a
+  - sudo apt-get install valgrind
+
+script:
+    - echo "Start TravisCI"
+    - chmod 755 simplecompile.sh; ./simplecompile.sh
+

@@ -1,0 +1,22 @@
+17
+A     B     6
+A     E     2
+A     F     2
+A     H     8
+B     D     9
+B     E     1
+B     H     5
+C     K     4
+C     L     3
+D     K     1
+E     G     1
+E     I     1
+E     J     3
+F     G     6
+H     L     3
+I     J     3
+I     K     1
+
+# updated on 3 Feb 2020
+# The integer stating the number of edges was missing
+# Added 17 as the first line of graph
