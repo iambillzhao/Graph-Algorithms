@@ -3,7 +3,7 @@
 Graph class with several graph algorithms including depth-first search, 
 breadth-first search, dijkstra's shortest path, minimum spanning tree
 
-[Author: Bill Zhao](www.iambillzhao.com)
+[Author: Bill Zhao](https://www.iambillzhao.com/)
 
 ## Included Files
 
